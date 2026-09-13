@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request a Quote — Blue Spruce Graphics</title>
+<meta name="description" content="Request a quote for turned-edge rigid packaging or commercial print from Blue Spruce Graphics.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a href="index.html" class="wordmark">Blue <span>Spruce</span> Graphics</a>
+    <nav class="primary">
+      <a href="services.html">Services</a>
+      <a href="antelope-valley.html">Antelope Valley</a>
+      <a href="quote.html" class="cta">Request a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:20px;">
+  <div class="wrap" style="grid-template-columns: 1fr;">
+    <div>
+      <h1>Tell us what you're building.</h1>
+      <p class="lede">Give us the basics and we'll follow up with a quote. The more detail you give on quantity and finish, the faster we can get you a number.</p>
+    </div>
+  </div>
+</section>
+
+<section class="pad" style="padding-top:0;">
+  <div class="wrap">
+
+    <!--
+      REPLACE THE FORM ACTION BELOW WITH YOUR OWN FORMSPREE ENDPOINT.
+      1. Create a free account at https://formspree.io
+      2. Create a new form and copy its endpoint (looks like https://formspree.io/f/xxxxxxxx)
+      3. Paste it into the action="" attribute below.
+      Until you do this, submissions will not go anywhere.
+    -->
+    <form class="quote" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="row2">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company">
+        </div>
+      </div>
+
+      <div class="row2">
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="project_type">Project type</label>
+        <select id="project_type" name="project_type">
+          <option value="Turned-edge slipcase">Turned-edge slipcase</option>
+          <option value="Setup box">Setup box</option>
+          <option value="Commercial print">Commercial print</option>
+          <option value="Not sure">Not sure yet</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="quantity">Estimated quantity</label>
+        <input type="text" id="quantity" name="quantity" placeholder="e.g. 500 units">
+      </div>
+
+      <div class="field">
+        <label for="details">Project details</label>
+        <textarea id="details" name="details" placeholder="Dimensions, materials, finish, timeline — whatever you know so far."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Send Quote Request</button>
+    </form>
+
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <span>Blue Spruce Graphics — Bakersfield, CA · Kern County</span>
+    <span><a href="mailto:tim@bluesprucegraphics.com">tim@bluesprucegraphics.com</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
